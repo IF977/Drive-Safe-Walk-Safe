@@ -11,6 +11,9 @@ Descrição do produto
 Membros
 
 Paulo Marques (pemsm) - Desenvolvedor
+
 Paulo Vaz (ptsv) - Desenvolvedor/Gerente de Projetos
+
 Valdir Souza (vss) - Desenvolvedor
+
 Samuel Paes (scp2) - Desenvolvedor
