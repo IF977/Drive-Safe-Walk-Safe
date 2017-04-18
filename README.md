@@ -1,5 +1,6 @@
 # Drive Safe, Walk Safe
 
+   Projeto didático-prático da disciplina (IF977) Engenharia de Software, do curso de graduação em Sistemas de Informação do Centro de Informática (CIn) da Universidade Federal de Pernambuco (UFPE).
 
 ### Justificativa
    O projeto foi motivado pela grande e crescente quantidade de acidentes de trânsito que ocorrem a todo momento. O foco é a conscientização tanto de pedestres quanto dos motoristas.
