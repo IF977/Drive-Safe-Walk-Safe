@@ -9,6 +9,8 @@
    Será uma página que trará informações sobre os acidentes de trânsito em Recife através de gráficos e de planilhas. As informações terão diversos filtros e a cada ocorrência poderão ser feitos comentários.
 
 ### Membros
+Hiroito Miyakawa (hscm) - Desenvolvedor
+
 Paulo Marques (pemsm) - Desenvolvedor
 
 Paulo Vaz (ptsv) - Desenvolvedor/Gerente de Projetos
