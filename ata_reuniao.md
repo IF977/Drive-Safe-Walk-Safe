@@ -8,11 +8,12 @@ Data         | Local
 
 
 ### Participantes
-* Paulo Vaz
-* Samuel Paes
 * Hiroito Miyakawa
-* Valdir Souza
+* Paulo Marques
+* Paulo Vaz (PO/GP)
 * Roberto Pires (Cliente)
+* Samuel Paes
+* Valdir Souza
 
 ### Objetivos
 * Fazer reunião com o cliente para obter ao menos uma visão geral de como se deseja que o sistema seja implementado.
