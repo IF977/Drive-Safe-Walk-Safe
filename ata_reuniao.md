@@ -1,6 +1,5 @@
 #Drive-Safe-Walk-Safe
 
-
 ## Ata de Reunião
 
 Data         | Local
@@ -26,8 +25,12 @@ Data         | Local
 
 ### Ações a serem tomadas
 Ação                                | Responsável   
------------------------------------ | ------------- 
+----------------------------------- | ----------------
 Iniciar implementação de protótipos | Todos da equipe
+Estudar Ruby, Rails e as plataformas a serem utilizadas | Todos da equipe
+Fazer mockup (Lo-Fi) da página principal | Paulo Vaz
+Fazer mockup (Lo-Fi) da janela de comentário | Samuel Paes
+Fazer mockup (Lo-Fi) da página de recomendações e precauções | Paulo Marques
 
 ###Informações Adicionais
 * Entrevista:
@@ -53,3 +56,5 @@ R: Sim. O sistema deve permitir o usuário visualizar o local do acidente no Goo
 7) Mais alguma observação, exigência ou preferência?
 R: Gostaria que o sistema fosse fácil de manusear, sem clicks desnecessários. Sua estrutura e funcionalidade são simples, então espera-se que o usuário tenha essa experiência. Seria bom fazer com o que a aparência do sistema seja agradável, para que os usuários o acessem de qualquer dispositivo e tenham uma visão agradável.
 
+8) Quais campos devem haver na janela de comentários?
+R: Os campos são: Nome, Email e Descrição. A descrição é o comentário em si.
