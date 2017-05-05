@@ -4,30 +4,25 @@
 
 Início da Iteração | Término da iteração
 ------------ | -------------
-xx/xx/xxxx | xx/xx/xxxx
+14/04/2017 | 21/04/2017
 
 
 ### O que estava planejado
-* Alguma coisa 
-* Alguma coisa 
-* Alguma coisa 
+* Fazer lo-fis
+* Fazer storyboards
+* Fazer historias de usuario
 
 ### O que foi feito
-* Alguma coisa 
-* Alguma coisa 
-* Alguma coisa 
+* Fazer lo-fis
+* Fazer storyboards
+* Fazer historias de usuario
 
 ### O que não foi feito
-* Alguma coisa 
-* Alguma coisa 
-* Alguma coisa
+* Nada
 
 ### Planejado para próxima iteração
-* Alguma coisa 
-* Alguma coisa
-* Alguma coisa 
+* Iniciar implementação das historias de usuario
 
 ### Lições aprendidas
-* Alguma coisa 
-* Alguma coisa 
-* Alguma coisa 
+* Como representar o conteudo do site num mockup
+* Como fazer storyboards e lo-fis
