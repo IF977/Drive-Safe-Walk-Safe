@@ -1,0 +1,39 @@
+<div class="page-header">
+  <h1>Home</h1>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Ocorrências</h3>
+  </div>
+  <div class="panel-body">
+    <p>Filtros</p>
+      
+    <%= form_tag({controller: "acidentes", action: "index"}, method: "get", class: "") do %>
+      <div class="form-group"> 
+        <%= label_tag(:select_vitimas, "Com ou sem vítimas?", { class: 'control-label'}) %>
+        <%= select_tag(:select_vitimas, options_for_select([['Apenas com vítimas', :com], ['Apenas sem vítimas', :sem],['Com e sem vítimas', :com_sem]], :com_sem), { class: 'form-control'})  %>
+      </div>
+      <%= submit_tag("Consultar", { class: 'btn btn-primary'}) %>
+    <% end %>
+  </div>
+  
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Descrição</th>
+        <th>Vítimas</th>
+        <th>Local</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% #Acidente.all.each do |acidente| %>
+      <tr>
+        <td>teste</td>
+        <td>teste</td>
+        <td>teste</td>
+      </tr>
+      <% #end %>
+    </tbody>
+  </table>
+</div>
