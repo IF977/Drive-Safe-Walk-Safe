@@ -9,7 +9,9 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.0'
 # Use sqlite3 as the database for Active Record
-#gem 'sqlite3' #comentando por causa do Heroku.
+#gem 'sqlite3' #Comentando para deploy no Heroku
+gem 'pg'
+gem 'jquery-rails', "~> 2.3.0"
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
