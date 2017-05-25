@@ -14,6 +14,17 @@
         <%= label_tag(:select_vitimas, "Com ou sem vítimas?", { class: 'control-label'}) %>
         <%= select_tag(:select_vitimas, options_for_select([['Apenas com vítimas', :com], ['Apenas sem vítimas', :sem],['Com e sem vítimas', :com_sem]], :com_sem), { class: 'form-control'})  %>
       </div>
+      
+      <div class="form-group">
+        <%= label_tag(:input_date_start, "A partir de", { class: 'control-label'}) %>
+        <%= date_field(:input_date_start, :date_start) %>
+      </div>
+      
+      <div class="form-group">
+        <%= label_tag(:input_date_start, "Até", { class: 'control-label'}) %>
+        <%= date_field(:input_date_start, :date_end) %>
+      </div>
+      
       <%= submit_tag("Consultar", { class: 'btn btn-primary'}) %>
     <% end %>
   </div>
