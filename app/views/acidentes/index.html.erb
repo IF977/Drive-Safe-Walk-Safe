@@ -21,8 +21,8 @@
       </div>
       
       <div class="form-group">
-        <%= label_tag(:input_date_end, "Até", { class: 'control-label'}) %>
-        <%= date_field(:input_date_end, :date_end) %>
+        <%= label_tag(:input_date_start, "Até", { class: 'control-label'}) %>
+        <%= date_field(:input_date_start, :date_end) %>
       </div>
       
       <%= submit_tag("Consultar", { class: 'btn btn-primary'}) %>
@@ -35,16 +35,28 @@
         <th>Descrição</th>
         <th>Vítimas</th>
         <th>Local</th>
+        <th>Link</th>
       </tr>
     </thead>
     <tbody>
       <% #Acidente.all.each do |acidente| %>
+       
+      <% @acidentes.each do |acidente| %>
       <tr>
-        <td>teste</td>
-        <td>teste</td>
-        <td>teste</td>
+        <td><%= acidente.descrição %></td>
+        <td><%= acidente.vitimas %></td>
+        <td><%= acidente.local %></td>
+        <td><%= link_to 'Detalhes', acidente_path(acidente) %></td>
+      </tr>
+<% end %>
+</table>
+ 
+
       </tr>
       <% #end %>
+      <br />
+ 
+<%= link_to 'Novo Acidente', new_acidente_path %>
     </tbody>
   </table>
 </div>
