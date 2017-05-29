@@ -1,0 +1,26 @@
+
+
+<h2>Acidente</h2>
+<p>
+  <strong>Descrição:</strong>
+  <%= @acidente.descrição %>
+</p>
+ 
+<p>
+  <strong>Vítimas:</strong>
+  <%= @acidente.vitimas %>
+</p>
+
+<p>
+  <strong>Local:</strong>
+  <%= @acidente.local %>
+</p>
+
+<h2>Comentários</h2>
+<%= render @acidente.comments %>
+
+
+<h2>Adicionar Comentário</h2>
+<%= render 'comments/form' %>
+  
+  <%= link_to 'Voltar', acidentes_path %>

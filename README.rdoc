@@ -1,28 +1,17 @@
-== README
+# Drive Safe, Walk Safe
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+   Projeto didático-prático da disciplina (IF977) Engenharia de Software, do curso de graduação em Sistemas de Informação do Centro de Informática (CIn) da Universidade Federal de Pernambuco (UFPE).
 
-Things you may want to cover:
+### Justificativa
+   O projeto foi motivado pela grande e crescente quantidade de acidentes de trânsito que ocorrem a todo momento. O foco é a conscientização tanto de pedestres quanto dos motoristas.
 
-* Ruby version
+### Descrição do produto
+   Será uma página que trará informações sobre os acidentes de trânsito em Recife através de gráficos e de planilhas. As informações terão diversos filtros e a cada ocorrência poderão ser feitos comentários.
 
-* System dependencies
+### Membros
+Hiroito Miyakawa (hscm) - Desenvolvedor
 
-* Configuration
+Paulo Marques (pemsm) - Desenvolvedor
 
-* Database creation
+Paulo Vaz (ptsv) - Desenvolvedor/Gerente de Projetos
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
