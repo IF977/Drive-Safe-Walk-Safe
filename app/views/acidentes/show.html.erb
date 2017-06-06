@@ -1,26 +1,48 @@
-
-
 <h2>Acidente</h2>
+
 <p>
-  <strong>Descrição:</strong>
-  <%= @acidente.descrição %>
+  <strong>Data/Hora:</strong>
+  <%= @acidente.data_hora %>
 </p>
- 
+
 <p>
   <strong>Vítimas:</strong>
   <%= @acidente.vitimas %>
 </p>
 
 <p>
-  <strong>Local:</strong>
-  <%= @acidente.local %>
+  <strong>Descrição:</strong>
+  <%= @acidente.descricao %>
+</p>
+
+<p>
+  <strong>Natureza:</strong>
+  <%= @acidente.natureza %>
+</p>
+
+<p>
+  <strong>Bairro:</strong>
+  <%= @acidente.bairro %>
+</p>
+
+<p>
+  <strong>Endereço:</strong>
+  <%= @acidente.endereco %>
+</p>
+
+<p>
+  <strong>Número:</strong>
+  <%= @acidente.numero %>
+</p>
+
+<p>
+  <strong>Complemento:</strong>
+  <%= @acidente.complemento %>
 </p>
 
 <h2>Comentários</h2>
-<%= render @acidente.comments %>
+<%= render @acidente.comentarios %>
 
-
-<h2>Adicionar Comentário</h2>
-<%= render 'comments/form' %>
+<%= render 'comentarios/form' %>
   
-  <%= link_to 'Voltar', acidentes_path %>
+<%= link_to 'Voltar', acidentes_path %>

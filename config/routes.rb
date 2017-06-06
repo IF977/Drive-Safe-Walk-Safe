@@ -6,10 +6,12 @@ Rails.application.routes.draw do
   
   root 'acidentes#index'
   
-  get 'acidentes/:id' => 'acidentes#show'  
+  get 'acidentes/:id' => 'acidentes#show'
   
-  resources :acidentes do #criando hierarquia entre comments e acidentes para dizer que o primeiro pertence ao segundo 
-    resources :comments
+  get 'comentarios/:id' => 'comentarios#show'
+  
+  resources :acidentes do #criando hierarquia entre comentários e acidentes para dizer que o primeiro pertence ao segundo 
+    resources :comentarios
   end
   
   

@@ -19,6 +19,6 @@ class AcidentesController < ApplicationController
     
     private
     def acidente_params
-        params.require(:acidente).permit(:descrição, :vitimas, :local)
+        params.require(:acidente).permit(:descricao, :vitimas)
     end
 end

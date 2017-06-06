@@ -37,13 +37,16 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+#Pagination
+gem 'kaminari'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'rspec-rails' #cucumber add por hiro
+  gem 'rspec-rails'
 end
 
-group :test do #cucumber add por Hiro
+group :test do
   gem 'cucumber'
   gem 'cucumber-rails', :require => false
   gem 'capybara'

@@ -11,24 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170527020707) do
+ActiveRecord::Schema.define(version: 20170603184423) do
 
   create_table "acidentes", force: :cascade do |t|
-    t.text     "descrição"
-    t.string   "vitimas"
-    t.string   "local"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "bairro"
+    t.string   "endereco"
+    t.integer  "numero",      limit: 8
+    t.string   "complemento"
+    t.string   "natureza"
+    t.string   "descricao"
+    t.integer  "vitimas"
+    t.datetime "data_hora"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
   end
 
-  create_table "comments", force: :cascade do |t|
-    t.string   "autor"
-    t.text     "body"
-    t.integer  "acidente_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+  create_table "comentarios", force: :cascade do |t|
+    t.string   "nome"
+    t.text     "texto"
+    t.integer  "acidente_id", limit: 8
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
   end
-
-  add_index "comments", ["acidente_id"], name: "index_comments_on_acidente_id"
 
 end
