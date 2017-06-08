@@ -1,13 +1,17 @@
 Rails.application.routes.draw do
-  get 'recomendacoes' => 'recomendacoes#show'
-  get 'deral' => redirect('http://www.der.al.gov.br')
+  get '/recomendacoes' => 'recomendacoes#show'
+  get '/deral' => redirect('http://www.der.al.gov.br')
   resources :acidentes
   get 'index' => 'acidentes#index'
   
-  root to: 'acidentes#index'
+  root 'acidentes#index'
   
-  resources :acidentes do #criando hierarquia entre comments e acidentes para dizer que o primeiro pertence ao segundo 
-    resources :comments
+  get 'acidentes/:id' => 'acidentes#show'
+  
+  get 'comentarios/:id' => 'comentarios#show'
+  
+  resources :acidentes do #criando hierarquia entre comentários e acidentes para dizer que o primeiro pertence ao segundo 
+    resources :comentarios
   end
   
   

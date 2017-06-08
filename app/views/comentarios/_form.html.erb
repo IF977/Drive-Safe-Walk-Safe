@@ -1,0 +1,14 @@
+<h2>Adicionar Comentário</h2>
+<%= form_for([@acidente, @acidente.comentarios.build]) do |f| %>
+  <p>
+    <%= f.label 'Autor' %><br>
+    <%= f.text_field :nome %>
+  </p>
+  <p>
+    <%= f.label 'Comentário' %><br>
+    <%= f.text_area :texto %>
+  </p>
+  <p>
+    <%= f.submit 'Enviar Comentário' %>
+  </p>
+<% end %>

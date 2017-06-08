@@ -1,0 +1,11 @@
+<p>
+  <strong>Autor:</strong>
+  <%= comentario.nome %>
+</p>
+ 
+<p>
+  <strong>Comentário:</strong>
+  <%= comentario.texto %>
+</p>
+
+<p><%= button_to "Excluir", acidente_comentario_path(@acidente, comentario), :method=>:delete, :class=>:destroy %></p>

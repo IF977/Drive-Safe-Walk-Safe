@@ -1,5 +1,5 @@
 Feature: filtrar seleção com vitimas 
-    Scenario: Scucessfully filtering results only with "Apenas com vítimas"
+    Scenario: Successfully filtering results only with "Apenas com vítimas"
       Given I am on the index pages
       When I select "Apenas com vítimas" on the "select_vitimas" filter
       And I click on consultar button
