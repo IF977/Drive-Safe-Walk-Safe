@@ -13,3 +13,15 @@ Then(/^I should see the results of "([^"]*)" to "([^"]*)"$/) do |date_start, dat
   expect(page).to have_no_content :between => "01/01/1990"..date_start
   expect(page).to have_no_content :between => date_end.."31/12/2099"
 end
+
+Then(/^I should see accidentes on the page$/) do
+ expect(page).to have_css "table"
+end
+
+Then(/^I should see accidentes on the page as a sheet$/) do
+  expect(page).to have_css "table"
+end
+
+Then(/^I should see the comment window$/) do
+  expect(page).to have_css("input#comentario_nome")
+end
