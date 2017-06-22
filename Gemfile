@@ -27,6 +27,13 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+# Google Maps For Rails
+gem 'gmaps4rails'
+# Chartkick - Ferramenta de criação de gráficos
+gem "chartkick"
+# Groupdate - Auxilar do Chartkick
+gem 'groupdate'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

@@ -1,3 +1,4 @@
+<%= javascript_include_tag '//www.google.com/jsapi', 'chartkick' %>
 <div class="page-header">
   <h1>Home</h1>
 </div>
@@ -7,22 +8,35 @@
     <h3 class="panel-title">Ocorrências</h3>
   </div>
   <div class="panel-body">
-    <p>Filtros</p>
+    <h2>Estatísticas</h2>
+    
+    <div>
+      <span>Acidentes agrupados por natureza</span>
+      <%= pie_chart Acidente.group(:natureza).count %>
+    </div>
+    
+    <div>
+      <span>Concentração de acidentes em cada dia da semana</span>
+      <%= line_chart Acidente.group_by_day_of_week(:data_hora, format: "%a").count %>
+    </div>
+  </div>
+  <div class="panel-body">
+    <h2>Filtros</h2>
       
-    <%= form_tag({controller: "acidentes", action: "index"}, method: "get", class: "") do %>
+    <%= form_tag({controller: "acidentes", action: "index"}, method: "post", class: "") do %>
       <div class="form-group"> 
-        <%= label_tag(:select_vitimas, "Com ou sem vítimas?", { class: 'control-label'}) %>
-        <%= select_tag(:select_vitimas, options_for_select([['Apenas com vítimas', :com], ['Apenas sem vítimas', :sem],['Com e sem vítimas', :com_sem]], :com_sem), { class: 'form-control'})  %>
+        <%= label_tag(acidente[:vitimas], "Com ou sem vítimas?", { class: 'control-label'}) %>
+        <%= select_tag(acidente[:vitimas], options_for_select([['Apenas com vítimas', :com], ['Apenas sem vítimas', :sem],['Com e sem vítimas', :com_sem]], :com_sem), { class: 'form-control'})  %>
       </div>
       
       <div class="form-group">
         <%= label_tag(:input_date_start, "A partir de", { class: 'control-label'}) %>
-        <%= date_field(:input_date_start, :date_start) %>
+        <%= date_field(:input_date_start, acidente[:date_start]) %>
       </div>
       
       <div class="form-group">
         <%= label_tag(:input_date_start, "Até", { class: 'control-label'}) %>
-        <%= date_field(:input_date_start, :date_end) %>
+        <%= date_field(:input_date_start, acidente[:date_end]) %>
       </div>
       
       <%= submit_tag("Consultar", { class: 'btn btn-primary'}) %>
@@ -36,7 +50,7 @@
         <th>Data/Hora</th>
         <th>Vítimas</th>
         <th>Descrição</th>
-        <th>Bairro</th>
+        <th>Endereço</th>
         <th>Natureza</th>
         <th>Detalhes</th>
       </tr>
@@ -48,7 +62,7 @@
           <td><%= acidente.data_hora.strftime('%d/%m/%Y %H:%M:%S') %></td>
           <td><%= acidente.vitimas %></td>
           <td><%= acidente.descricao %></td>
-          <td><%= acidente.bairro %></td>
+          <td><%= acidente.endereco %></td>
           <td><%= acidente.natureza %></td>
           <td><%= link_to 'Detalhes', acidente_path(acidente) %></td>
         </tr>
