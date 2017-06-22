@@ -20,8 +20,18 @@ Início da Iteração | Término da iteração
 * Resolver issue 6: Exibir dados em forma de planilhas
 * Apenas alguns testes BDD.
 
+| Atividade | Atribuição |
+| --- | --- |
+| Implementação das issues | Paulo Vaz |
+| Testes RSpec | Paulo Marques |
+| Testes Cucumber | Hiroito Miyakawa |
+
 ### O que não foi feito
 * Alguns testes BDD e os TDD.
+
+| Atividade | Atribuição |
+| --- | --- |
+| Alguns testes BDD e os TDD | Todos |
 
 ### Planejado para próxima iteração
 * Resolver issue 1: Fazer o sistema ficar intuitivo e construir uma interface de usuário intuitiva]

@@ -14,8 +14,18 @@ Início da Iteração | Término da iteração
 ### O que foi feito
 * Resolver issue 5: Implementar filtro de data na pesquisa de acidentes
 
+| Atividade | Atribuição |
+| --- | --- |
+| Implementação das issues | Paulo Vaz |
+| Testes RSpec | Paulo Marques |
+| Testes Cucumber | Hiroito Miyakawa |
+
 ### O que não foi feito
 * Resolver issue 6: Exibir dados em forma de planilhas
+
+| Atividade | Atribuição |
+| --- | --- |
+| Exibir dados em forma de planilhas | Todos |
 
 ### Planejado para próxima iteração
 * Resolver issue 2: Criar página inicial com resumo dos acidentes de trânsito
