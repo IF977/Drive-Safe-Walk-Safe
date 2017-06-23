@@ -60,11 +60,7 @@ class AcidentesController < ApplicationController
     end
     
     def google_map(center)
-      "https://maps.googleapis.com/maps/api/staticmap?center=#{center}&size=300x300&zoom=17"
-    end
-    
-    def google_map_source(center)
-        "https://www.google.com/maps/embed/v1/place?key=AIzaSyBAlemrE2she5HXnZDG8hGb7XB2mmFrQ1I&q=#{center}"
+      "https://maps.googleapis.com/maps/api/staticmap?center=#{center}&size=300x300&zoom=17&key=AIzaSyBAlemrE2she5HXnZDG8hGb7XB2mmFrQ1I"
     end
     
     private
