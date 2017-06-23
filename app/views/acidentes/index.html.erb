@@ -22,7 +22,7 @@
   </div>
   <div class="panel-body">
     <h2>Filtros</h2>
-      
+    
     <%= form_tag({controller: "acidentes", action: "index"}, method: "post", class: "") do %>
       <div class="form-group"> 
         <%= label_tag(:vitimas, "Com ou sem vítimas?", { class: 'control-label'}) %>
@@ -30,13 +30,13 @@
       </div>
       
       <div class="form-group">
-        <%= label_tag(:input_date_start, "A partir de", { class: 'control-label'}) %>
-        <%= date_field(:input_date_start, :date_start) %>
+        <%= label_tag(:date_input_date_start, "A partir de", { class: 'control-label'}) %>
+        <%= date_field(:date_input, :date_start) %>
       </div>
       
       <div class="form-group">
-        <%= label_tag(:input_date_start, "Até", { class: 'control-label'}) %>
-        <%= date_field(:input_date_start, :date_end) %>
+        <%= label_tag(:date_input_date_end, "Até", { class: 'control-label'}) %>
+        <%= date_field(:date_input, :date_end) %>
       </div>
       
       <%= submit_tag("Consultar", { class: 'btn btn-primary'}) %>

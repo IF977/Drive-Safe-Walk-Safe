@@ -2,19 +2,47 @@ class AcidentesController < ApplicationController
     helper_method :google_map, :google_map_source
     
     def index
-        # @acidentes = Acidente.all
+        sql = "SELECT * FROM Acidentes "
+        where = ""
         
-        if params[:select_vitimas]
-            if params[:select_vitimas] == :com
-                @acidentes = Acidente.where(:vitimas > 0)
-            elsif params[:select_vitimas] == :sem
-                @acidentes = Acidente.where(:vitimas == 0)
+        if params[:vitimas]
+            where += 'vitimas '
+            if params[:vitimas].to_sym == :com
+                where += "> 0"
+            elsif params[:vitimas].to_sym == :sem
+                where += "= 0"
             else
-                @acidentes = Acidente.all
+                where += ">= 0"
             end
-        else 
-            @acidentes = Acidente.all
         end
+        
+        if params[:date_input] && !params[:date_input][:date_start].blank?
+            # query_date_start = " data_hora >= Convert(datetime, '" + params[:date_input][:date_start].to_s + "' )"
+            query_date_start = " data_hora >= '" + params[:date_input][:date_start].to_s + "'"
+            if !where.blank?
+                where += " AND"
+            end
+                
+            where += query_date_start
+        end
+        
+        if params[:date_input] && !params[:date_input][:date_end].blank?
+            # query_date_end = " data_hora <= Convert(datetime, '" + params[:date_input][:date_end].to_s + "')"
+            query_date_end = " data_hora <= '" + params[:date_input][:date_end].to_s + " 23:59:59.999'"
+            if !where.blank?
+                where += " AND"
+            end
+                
+            where += query_date_end
+        end
+        
+        if !where.blank?
+            sql += " WHERE "
+        end
+        
+        sql += where
+        
+        @acidentes = Acidente.find_by_sql(sql)
     end
     
     def show
@@ -41,7 +69,7 @@ class AcidentesController < ApplicationController
     
     private
     def acidente_params
-        params.require(:acidente).permit(:data_start, :date_end, :vitimas)
+        params.require(:acidente).permit(:date_start, :date_end, :vitimas)
     end
     
 end

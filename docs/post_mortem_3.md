@@ -8,34 +8,35 @@ Início da Iteração | Término da iteração
 
 
 ### O que estava planejado
-* Resolver issue 2: Criar página inicial com resumo dos acidentes de trânsito
-* Resolver issue 9: Criar janela de comentários
-* Resolver issue 6: Exibir dados em forma de planilhas
-* Fazer testes BDD e TDD pendentes e novos
+| Atividade | Atribuição |
+| --- | --- |
+| Resolver issue 2: Criar página inicial com resumo dos acidentes de trânsito | Paulo Vaz |
+| Resolver issue 9: Criar janela de comentários | Paulo Vaz |
+| Resolver issue 6: Exibir dados em forma de planilhas | Paulo Vaz |
+| Testes Cucumber (BDD) | Hiroito Miyakawa |
+| Testes RSpec (TDD) | Paulo Marques |
 
 ### O que foi feito
-* Resolver issue 2: Criar página inicial com resumo dos acidentes de trânsito
-* Resolver issue 3: Exibir detalhamento de ocorrência
-* Resolver issue 9: Criar janela de comentários
-* Resolver issue 6: Exibir dados em forma de planilhas
-* Apenas alguns testes BDD.
-
 | Atividade | Atribuição |
 | --- | --- |
-| Implementação das issues | Paulo Vaz |
-| Testes RSpec | Paulo Marques |
-| Testes Cucumber | Hiroito Miyakawa |
+| Resolver issue 2: Criar página inicial com resumo dos acidentes de trânsito | Paulo Vaz |
+| Resolver issue 3: Exibir detalhamento de ocorrência | Paulo Vaz |
+| Resolver issue 9: Criar janela de comentários | Paulo Vaz |
+| Resolver issue 6: Exibir dados em forma de planilhas | Paulo Vaz |
+| Testes Cucumber (BDD) | Hiroito Miyakawa |
 
 ### O que não foi feito
-* Alguns testes BDD e os TDD.
-
 | Atividade | Atribuição |
 | --- | --- |
-| Alguns testes BDD e os TDD | Todos |
+| Testes RSpec (TDD) | Todos |
 
 ### Planejado para próxima iteração
-* Resolver issue 1: Fazer o sistema ficar intuitivo e construir uma interface de usuário intuitiva]
-* Resolver issue 8: Integrar sistema com a API do Google Maps
+| Atividade | Atribuição |
+| --- | --- |
+| Resolver issue 1: Fazer o sistema ficar intuitivo e construir uma interface de usuário intuitiva | Paulo Vaz |
+| Resolver issue 8: Integrar sistema com a API do Google Maps | Paulo Vaz |
+| Testes Cucumber (BDD) | Hiroito Miyakawa |
+| Testes RSpec (TDD) | Paulo Marques |
 
 ### Lições aprendidas
 * Como importar dados de uma planilha
