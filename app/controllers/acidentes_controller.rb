@@ -40,7 +40,7 @@ class AcidentesController < ApplicationController
             sql += " WHERE "
         end
         
-        sql += where
+        sql += where + " ORDER BY data_hora"
         
         @acidentes = Acidente.find_by_sql(sql)
     end
