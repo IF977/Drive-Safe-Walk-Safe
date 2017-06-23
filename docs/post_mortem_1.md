@@ -8,18 +8,33 @@ Início da Iteração | Término da iteração
 
 
 ### O que estava planejado
-* Resolver issue 4: Implementar filtro de vítimas na pesquisa de acidentes
-* Resolver issue 10: Criar página de recomendações e precauções
+| Atividade | Atribuição |
+| --- | --- |
+| Resolver issue 4: Implementar filtro de vítimas na pesquisa de acidentes | Paulo Vaz |
+| Resolver issue 10: Criar página de recomendações e precauções | Paulo Vaz |
+| Testes Cucumber (BDD) | Hiroito Miyakawa |
+| Testes RSpec (TDD) | Paulo Marques |
 
 ### O que foi feito
-* Resolver issue 4: Implementar filtro de vítimas na pesquisa de acidentes
-* Resolver issue 10: Criar página de recomendações e precauções
+| Atividade | Atribuição |
+| --- | --- |
+| Resolver issue 4: Implementar filtro de vítimas na pesquisa de acidentes | Paulo Vaz |
+| Resolver issue 10: Criar página de recomendações e precauções | Paulo Vaz |
+| Testes Cucumber (BDD) | Hiroito Miyakawa |
+
 
 ### O que não foi feito
-* Nada
+| Atividade | Atribuição |
+| --- | --- |
+| Testes RSpec (TDD) | Todos |
 
 ### Planejado para próxima iteração
-* Definir quais as próximas duas issues que serão priorizadas e concluí-las
+| Atividade | Atribuição |
+| --- | --- |
+| Resolver issue 5: Implementar filtro de data na pesquisa de acidentes | Paulo Vaz |
+| Resolver issue 6: Exibir dados em forma de planilhas | Paulo Vaz |
+| Testes Cucumber | Hiroito Miyakawa |
+| Testes RSpec | Paulo Marques |
 
 ### Lições aprendidas
 * Maior familiarização com o código de Ruby

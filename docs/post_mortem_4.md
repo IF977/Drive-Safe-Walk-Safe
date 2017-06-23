@@ -8,30 +8,29 @@ Início da Iteração | Término da iteração
 
 
 ### O que estava planejado
-* Resolver issue 1: Fazer o sistema ficar intuitivo e construir uma interface de usuário intuitiva
-* Resolver issue 8: Integrar sistema com a API do Google Maps
-* Resolver issue 7: Exibir dados em forma de gráficos
+| Atividade | Atribuição |
+| --- | --- |
+| Resolver issue 1: Fazer o sistema ficar intuitivo e construir uma interface de usuário intuitiva | Paulo Vaz |
+| Resolver issue 8: Integrar sistema com a API do Google Maps | Paulo Vaz |
+| Resolver issue 7: Exibir dados em forma de gráficos | Paulo Vaz |
+| Testes Cucumber (BDD) | Hiroito Miyakawa |
+| Testes RSpec (TDD) | Paulo Marques |
 
 ### O que foi feito
-* Resolver issue 1: Fazer o sistema ficar intuitivo e construir uma interface de usuário intuitiva
-* Resolver issue 8: Integrar sistema com a API do Google Maps
-* Resolver issue 7: Exibir dados em forma de gráficos
-
 | Atividade | Atribuição |
 | --- | --- |
-| Implementação das issues | Paulo Vaz |
-| Testes RSpec | Paulo Marques |
-| Testes Cucumber | Hiroito Miyakawa |
+| Resolver issue 1: Fazer o sistema ficar intuitivo e construir uma interface de usuário intuitiva | Paulo Vaz |
+| Resolver issue 8: Integrar sistema com a API do Google Maps | Paulo Vaz |
+| Resolver issue 7: Exibir dados em forma de gráficos | Paulo Vaz |
+| Testes Cucumber (BDD) | Hiroito Miyakawa |
 
 ### O que não foi feito
-* Algumas refatorações e melhorias.
-
 | Atividade | Atribuição |
 | --- | --- |
-| Algumas refatorações e melhorias | Todos |
+| Testes RSpec (TDD) | Paulo Marques |
 
 ### Planejado para próxima iteração
 * Esta foi a última iteração, porém ficaram alguns itens pendentes e algumas refatorações. Isto está planejado ser feito mesmo após a iteração 4.
 
 ### Lições aprendidas
-* Fazer o bind de um form com um objeto
+* Fazer consultas SQL com "find_by_sql"

@@ -8,30 +8,34 @@ Início da Iteração | Término da iteração
 
 
 ### O que estava planejado
-* Resolver issue 5: Implementar filtro de data na pesquisa de acidentes
-* Resolver issue 6: Exibir dados em forma de planilhas
-
-### O que foi feito
-* Resolver issue 5: Implementar filtro de data na pesquisa de acidentes
-
 | Atividade | Atribuição |
 | --- | --- |
-| Implementação das issues | Paulo Vaz |
+| Resolver issue 5: Implementar filtro de data na pesquisa de acidentes | Paulo Vaz |
+| Resolver issue 6: Exibir dados em forma de planilhas | Paulo Vaz |
+| Testes Cucumber | Hiroito Miyakawa |
 | Testes RSpec | Paulo Marques |
+
+### O que foi feito
+| Atividade | Atribuição |
+| --- | --- |
+| Resolver issue 5: Implementar filtro de data na pesquisa de acidentes | Paulo Vaz |
 | Testes Cucumber | Hiroito Miyakawa |
 
 ### O que não foi feito
-* Resolver issue 6: Exibir dados em forma de planilhas
-
 | Atividade | Atribuição |
 | --- | --- |
-| Exibir dados em forma de planilhas | Todos |
+| Resolver issue 6: Exibir dados em forma de planilhas | Paulo Vaz |
+| Testes RSpec | Todos |
 
 ### Planejado para próxima iteração
-* Resolver issue 2: Criar página inicial com resumo dos acidentes de trânsito
-* Resolver issue 9: Criar janela de comentários
-* Resolver issue 6: Exibir dados em forma de planilhas
-* Fazer testes BDD e TDD pendentes e novos
+| Atividade | Atribuição |
+| --- | --- |
+| Resolver issue 2: Criar página inicial com resumo dos acidentes de trânsito | Paulo Vaz |
+| Resolver issue 9: Criar janela de comentários | Paulo Vaz |
+| Resolver issue 6: Exibir dados em forma de planilhas | Paulo Vaz |
+| Testes Cucumber | Hiroito Miyakawa |
+| Testes RSpec | Paulo Marques |
+| Fazer testes BDD e TDD pendentes e novos | Todos |
 
 ### Lições aprendidas
 * Testes basicos de Cucumber

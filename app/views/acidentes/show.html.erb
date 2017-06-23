@@ -42,16 +42,6 @@
 
 <%= link_to 'Visualizar Mapa', google_map(@acidente.endereco + @acidente.numero.to_s), target: "_blank", class: "btn btn-large btn-primary" %>
 
-<!-- Corrigir código abaixo -->
-<%= content_tag :iframe, 
-  width: '300', 
-  height: '300', 
-  frameborder: '0', 
-  style: 'border:0', 
-  src: google_map_source(@acidente.endereco + @acidente.numero.to_s), 
-  allowfullscreen: '' do %>
-<% end %>
-
 <% if @acidente.comentarios.count > 0 %>
   <h2>Comentários</h2>
 <% end %>
