@@ -8,7 +8,8 @@
 ### Descrição do produto
    Será uma página que trará informações sobre os acidentes de trânsito em Recife através de gráficos e de planilhas. As informações terão diversos filtros e a cada ocorrência poderão ser feitos comentários.
    
-Vídeo de apresentação: https://youtu.be/H93R26HIwpg
+Apresentação: https://youtu.be/H93R26HIwpg
+Heroku: https://dsws-es-ufpe.herokuapp.com/
 
 ### Membros
 Hiroito Miyakawa (hscm) - Desenvolvedor
